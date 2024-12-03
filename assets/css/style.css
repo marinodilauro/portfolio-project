@@ -7,9 +7,9 @@
 :root {
   --color-primary: #598392;
   --color-secondary: #124559;
-  --color-secondary-dark: #01161E;
-  --color-light: #AEC3B0;
-  --color-lighter: #EFF6E0;
+  --color-secondary-dark: #01161e;
+  --color-light: #aec3b0;
+  --color-lighter: #eff6e0;
 }
 
 /* #region :::: UTILITY RULES:::: */
@@ -60,6 +60,13 @@ header {
   /* position: sticky; */
   /* top: 0; */
   /* z-index: 9999; */
+  .logo {
+    img {
+      border-radius: 50%;
+      height: 3rem;
+    }
+  }
+
   .navbar-nav {
     gap: 2rem;
 
@@ -75,7 +82,42 @@ header {
   a {
     text-decoration: none;
   }
-
 }
 
 /* #endregion :::: HEADER :::: */
+
+/* #region :::: MAIN :::: */
+.banner_style {
+  .photo_style {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
+
+  .skills_carousel {
+    .skills_container {
+      display: flex;
+      white-space: nowrap;
+      gap: 4rem;
+
+      img {
+        max-width: 40px;
+        filter: drop-shadow(0.7px 0.7px 1px white);
+      }
+    }
+  }
+
+  h2,
+  p strong {
+    filter: drop-shadow(1.5px 3px 1px var(--color-secondary));
+  }
+
+}
+
+/* #endregion :::: MAIN :::: */

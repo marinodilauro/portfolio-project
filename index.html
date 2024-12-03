@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MdL Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- Bootstrap CSS link -->
     <link
@@ -15,11 +15,17 @@
     />
   </head>
   <body>
-    <!-- Header -->
+    <!-- #region HEADER -->
     <header class="sticky-top bg_secondary">
       <nav class="navbar navbar-expand-md py-3 px-md-5">
         <div class="container d-flex align-items-center">
-          <a class="font_color_light" href="#">
+          <a
+            class="font_color_light d-flex justify-content-center align-items-center gap-3"
+            href="#"
+          >
+            <div class="logo">
+              <img loading="lazy" src="./assets/img/Avatar.jpg" alt="" />
+            </div>
             <h1><strong>MdL PORTFOLIO</strong></h1>
           </a>
 
@@ -57,5 +63,69 @@
         </div>
       </nav>
     </header>
+    <!-- #endregion HEADER -->
+
+    <!-- #region MAIN -->
+    <!-- Banner -->
+    <section class="banner_style bg_primary py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="photo_style mb-4">
+              <img loading="lazy" src="./assets/img/photo_2.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="col-8">
+            <h2 class="mb-4 fw-bold">Ciao, I'm Marino di Lauro!</h2>
+
+            <div class="skills_carousel py-4 mb-5">
+              <div class="skills_container">
+                <img src="./assets/img/logos/html.png" alt="" loading="lazy" />
+                <img src="./assets/img/logos/css.png" alt="" loading="lazy" />
+                <img
+                  src="./assets/img/logos/bootstrap.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <img
+                  src="./assets/img/logos/javascript.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <img src="./assets/img/logos/vuejs.png" alt="" loading="lazy" />
+                <img src="./assets/img/logos/php.png" alt="" loading="lazy" />
+                <img
+                  src="./assets/img/logos/laravel.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <img src="./assets/img/logos/mysql.png" alt="" loading="lazy" />
+                <img src="./assets/img/logos/git.png" alt="" loading="lazy" />
+                <img
+                  src="./assets/img/logos/github.png"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <p class="fs-3 lh-lg">
+              I'm a
+              <strong>Jr. Full Stack Web Developer</strong> based in Napoli,
+              Italy. With a background in animal science and a
+              <strong>passion for technology</strong>, I've transitioned into
+              web development to pursue my love for creating
+              <strong>innovative digital solutions</strong>. I'm passionate
+              about creating user-friendly and efficient web applications. My
+              diverse background allows me to approach problems from unique
+              perspectives, and I'm always eager to
+              <strong>learn new technologies</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #endregion MAIN -->
+    <main></main>
   </body>
 </html>
