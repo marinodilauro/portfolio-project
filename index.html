@@ -26,7 +26,7 @@
   <body>
     <!-- #region HEADER -->
     <header class="sticky-top bg_secondary">
-      <nav class="navbar navbar-expand-md py-3 px-md-5">
+      <nav class="navbar navbar-expand-md py-3">
         <div class="container d-flex align-items-center">
           <a
             class="font_color_light d-flex justify-content-center align-items-center gap-3"
@@ -63,7 +63,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="font_color_light" aria-current="page" href="#contact"
+                <a
+                  class="font_color_light"
+                  aria-current="page"
+                  href="#contact_me"
                   >CONTACT</a
                 >
               </li>
@@ -76,7 +79,7 @@
 
     <!-- #region MAIN -->
     <!-- About me -->
-    <section id="about_me" class="bg_primary py-4">
+    <section id="about_me" class="bg_primary py-5">
       <div class="container">
         <div class="row">
           <div class="col-4">
@@ -137,8 +140,8 @@
     <!-- About me -->
 
     <!-- Projects -->
-    <section id="projects" class="bg_light py-5 px-md-5">
-      <div class="container d-flex flex-column align-items-center">
+    <section id="projects" class="bg_light py-5">
+      <div class="container d-flex flex-column align-items-center px-5 px-md-0">
         <h2>PORTFOLIO</h2>
 
         <div
@@ -443,7 +446,78 @@
       </div>
     </section>
     <!-- Projects -->
+
+    <!-- Contact me -->
+    <section id="contact_me" class="bg_primary py-5">
+      <div class="text-center">
+        <h2>CONTACT ME</h2>
+      </div>
+
+      <div
+        class="divider w-100 py-2 d-flex justify-content-center align-items-center"
+      >
+        <hr class="hr_bold_light" />
+        <i class="px-2 px-md-4 fa-solid fa-2xl fa-code"></i>
+        <hr class="hr_bold_light" />
+      </div>
+      <div class="container d-flex justify-content-center align-items-center">
+        <form action="" method="POST" class="w-75">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              aria-describedby="helpId"
+              placeholder=""
+              v-model="name"
+            />
+            <small id="nameHelper" class="form_text">Your full name</small>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              name="email"
+              id="email"
+              aria-describedby="helpId"
+              placeholder=""
+              v-model="email"
+            />
+            <small id="emailHelper" class="form_text">Your email address</small>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              id="message"
+              rows="3"
+              v-model="message"
+            ></textarea>
+            <small id="messageHelper" class="form_text">Your message</small>
+          </div>
+
+          <button type="button" class="button">
+            <span class="button_top"> Send </span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact me -->
     <!-- #endregion MAIN -->
+
+    <!-- #region FOOTER -->
+    <footer
+      class="bg_secondary d-flex justify-content-center align-items-center"
+    >
+      &copy; 2024 Marino di Lauro. All rights reserved.
+    </footer>
+    <!-- #endregion FOOTER -->
     <main></main>
   </body>
 </html>

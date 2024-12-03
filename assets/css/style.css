@@ -10,11 +10,17 @@
   --color-secondary-dark: #01161e;
   --color-light: #aec3b0;
   --color-lighter: #eff6e0;
+  --button_radius: 0.75rem;
+  --button_color: aliceblue;
+  --button_outline_color: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-light) 100%);
+  --button_radius: 0.75rem;
+  --button_outline_color_disabled: grey;
 }
 
 /* #region :::: UTILITY RULES:::: */
-body {
+html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 .bg_primary {
@@ -63,9 +69,9 @@ body {
     height: 3px;
     border-radius: 2px;
     opacity: 1;
-    background-color: var(--bs-font_light);
-    color: var(--bs-font_light);
-    border: 1px solid var(--bs-font_light);
+    background-color: var(--color-lighter);
+    color: var(--color-light);
+    border: 1px solid var(--color-lighter);
   }
 
   .hr_bold_dark {
@@ -73,9 +79,57 @@ body {
     height: 3px;
     border-radius: 2px;
     opacity: 1;
-    background-color: var(--bs-secondary);
-    color: var(--bs-secondary);
-    border: 1px solid var(--bs-secondary);
+    background-color: var(--color-secondary);
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+  }
+}
+
+.button {
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.5rem 1rem;
+    background: var(--button_color);
+    transform: translateY(-0.2rem);
+    transition: transform 0.1s ease;
+    color: var(--color-secondary);
+
+    a {
+      color: var(--color-secondary);
+      text-decoration: none;
+    }
+  }
+
+  &.disabled {
+    background: var(--button_outline_color_disabled);
+
+    .button_top {
+      background-color: lightgray;
+      border: 2px solid lightgrey;
+    }
+
+    a {
+      color: grey;
+    }
+
+  }
+
+  &:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+
+  &:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
   }
 }
 
@@ -83,10 +137,8 @@ body {
 
 /* #region :::: HEADER :::: */
 header {
+  min-height: 90px;
 
-  /* position: sticky; */
-  /* top: 0; */
-  /* z-index: 9999; */
   .logo {
     img {
       border-radius: 50%;
@@ -114,6 +166,8 @@ header {
 /* #endregion :::: HEADER :::: */
 
 /* #region :::: MAIN :::: */
+
+/* About me section */
 #about_me {
   .photo_style {
     width: 100%;
@@ -147,6 +201,7 @@ header {
 
 }
 
+/* Projects section */
 #projects {
   .card {
     height: 20rem;
@@ -186,8 +241,8 @@ header {
       h3 {
         text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.7);
         text-decoration: none;
-        color: var(--bs-font_light);
-        filter: drop-shadow(1.5px 3px 1px var(--color-secondary));
+        color: var(--color-light);
+        filter: drop-shadow(1.5px 2px 3px var(--color-secondary));
       }
 
       &::after {
@@ -212,71 +267,6 @@ header {
       transform: translateY(95%);
       transition: all 0.5s ease;
 
-      .tag {
-        color: white;
-        border: 1px solid;
-        padding: 2px 10px;
-        line-height: 16px;
-        background-color: #2e2e2e;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 0.7rem;
-        font-weight: 500;
-        display: inline-block;
-      }
-
-      .button {
-        --button_radius: 0.75rem;
-        --button_color: aliceblue;
-        --button_outline_color: linear-gradient(135deg, #0023b3 0%, #00d2ff 100%);
-        --button_outline_color_disabled: grey;
-        font-weight: bold;
-        border: none;
-        border-radius: var(--button_radius);
-        background: var(--button_outline_color);
-
-        .button_top {
-          display: block;
-          box-sizing: border-box;
-          border: 2px solid var(--button_outline_color);
-          border-radius: var(--button_radius);
-          padding: 0.5rem 1rem;
-          background: var(--button_color);
-          transform: translateY(-0.2rem);
-          transition: transform 0.1s ease;
-
-          a {
-            color: linear-gradient(135deg, #0023b3 0%, #00d2ff 100%);
-            text-decoration: none;
-          }
-        }
-
-        &.disabled {
-          background: var(--button_outline_color_disabled);
-
-          .button_top {
-            background-color: lightgray;
-            border: 2px solid lightgrey;
-          }
-
-          a {
-            color: grey;
-          }
-
-        }
-
-        &:hover .button_top {
-          /* Pull the button upwards when hovered */
-          transform: translateY(-0.33em);
-        }
-
-        &:active .button_top {
-          /* Push the button downwards when pressed */
-          transform: translateY(0);
-        }
-      }
     }
 
     &:hover .details {
@@ -299,4 +289,18 @@ header {
   }
 }
 
+/* Contact me section */
+#contactme {
+  .form_text {
+    color: var(--color-lighter);
+  }
+}
+
 /* #endregion :::: MAIN :::: */
+
+/* #region :::: FOOTER :::: */
+footer {
+  height: 5vh;
+}
+
+/* #endregion :::: FOOTER :::: */
