@@ -13,6 +13,15 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <!-- Fontasesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- #region HEADER -->
@@ -66,8 +75,8 @@
     <!-- #endregion HEADER -->
 
     <!-- #region MAIN -->
-    <!-- Banner -->
-    <section class="banner_style bg_primary py-4">
+    <!-- About me -->
+    <section id="about_me" class="bg_primary py-4">
       <div class="container">
         <div class="row">
           <div class="col-4">
@@ -125,6 +134,315 @@
         </div>
       </div>
     </section>
+    <!-- About me -->
+
+    <!-- Projects -->
+    <section id="projects" class="bg_light py-5 px-md-5">
+      <div class="container d-flex flex-column align-items-center">
+        <h2>PORTFOLIO</h2>
+
+        <div
+          class="divider w-100 py-2 d-flex justify-content-center align-items-center"
+        >
+          <hr class="hr_bold_dark" />
+          <i class="px-2 px-md-4 fa-solid fa-2xl fa-code"></i>
+          <hr class="hr_bold_dark" />
+        </div>
+
+        <div class="row g-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <div class="col">
+            <div
+              class="card"
+              style="
+                background-image: url(./assets/img/projects/pokemon_tomatored.png);
+                background-size: cover;
+                background-position: center;
+                border-radius: 16px;
+              "
+            >
+              <div class="overlay"></div>
+              <div class="details">
+                <div class="cardHeader">
+                  <h3>Pokémon Tomatored</h3>
+                </div>
+
+                <div class="cardText">
+                  <p>
+                    Combine the productivity of the Pomodoro Technique with the
+                    fun of catching Pokémon! This VS Code extension helps you
+                    stay focused while giving you a chance to build your Pokémon
+                    collection during breaks.
+                  </p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <button type="button" class="button disabled" disabled>
+                    <span class="button_top"> View project </span>
+                  </button>
+
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a
+                        href="https://github.com/marinodilauro/vscode-extension-pkmn-tomatored"
+                        target="_blank"
+                      >
+                        Check repository
+                      </a>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style="
+                background-image: url(./assets/img/projects/travelog_cover.webp);
+                background-size: cover;
+                background-position: center;
+                border-radius: 16px;
+              "
+            >
+              <div class="overlay"></div>
+              <div class="details">
+                <div class="cardHeader">
+                  <h3>TraveLog</h3>
+                </div>
+
+                <div class="cardText">
+                  <p>
+                    TraveLog is your trusted app for planning and organizing
+                    trips! You can create detailed itineraries, add stops to
+                    your trips and view everything on an interactive map. You
+                    can also download its PWA (Progressive Web App).
+                  </p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a href="https://travelog.website" target="_blank"
+                        >View project</a
+                      ></span
+                    >
+                  </button>
+
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a
+                        href="https://labmouse-interactive.itch.io/nebula-arcade-shooter"
+                        target="_blank"
+                      >
+                        Check repository
+                      </a>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style="
+                background-image: url(./assets/img/projects/nebula_cover.webp);
+                background-size: cover;
+                background-position: center;
+                border-radius: 16px;
+              "
+            >
+              <div class="overlay"></div>
+              <div class="details">
+                <div class="cardHeader">
+                  <h3>Nebula - Arcade Shooter</h3>
+                </div>
+
+                <div class="cardText">
+                  <p>
+                    Vertical scroller arcade shooter made with Unity (C#). The
+                    player controls a spaceship and have to avoid and destroy
+                    enemy spaceships to increase his score.
+                  </p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a
+                        href="https://labmouse-interactive.itch.io/nebula-arcade-shooter"
+                        target="_blank"
+                      >
+                        View project
+                      </a>
+                    </span>
+                  </button>
+
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a
+                        href="https://github.com/marinodilauro/nebula-arcade-shooter-assets-only"
+                        target="_blank"
+                      >
+                        Check repository
+                      </a>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style="
+                background-image: url(./assets/img/projects/js-campominato-grid.png);
+                background-size: cover;
+                background-position: center;
+                border-radius: 16px;
+              "
+            >
+              <div class="overlay"></div>
+              <div class="details">
+                <div class="cardHeader">
+                  <h3>Koffing Sweeper</h3>
+                </div>
+
+                <div class="cardText">
+                  <p>A mine sweeper like game, made in plain JavaScript.</p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a
+                        href="https://marinodilauro.github.io/js-campominato-grid/"
+                        target="_blank"
+                      >
+                        View project
+                      </a>
+                    </span>
+                  </button>
+
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a
+                        href="https://github.com/marinodilauro/js-campominato-grid"
+                        target="_blank"
+                      >
+                        Check repository
+                      </a>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style="
+                background-image: url(./assets/img/projects/vue-boolzapp.png);
+                background-size: cover;
+                background-position: center;
+                border-radius: 16px;
+              "
+            >
+              <div class="overlay"></div>
+              <div class="details">
+                <div class="cardHeader">
+                  <h3>Chat web app</h3>
+                </div>
+
+                <div class="cardText">
+                  <p>
+                    This project shows the front-end of a chat web app. The user
+                    can search through the conversations preview on the left
+                    that will show last received message with date and time,
+                    send or delete messages and view messages' details.
+                  </p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a
+                        href="https://marinodilaurochat.netlify.app/"
+                        target="_blank"
+                      >
+                        View project
+                      </a>
+                    </span>
+                  </button>
+
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a
+                        href="https://github.com/marinodilauro/vue-boolzapp"
+                        target="_blank"
+                      >
+                        Check repository
+                      </a>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card"
+              style="
+                background-image: url(./assets/img/projects/proj-html-vuejs.png);
+                background-size: cover;
+                background-position: center;
+                border-radius: 16px;
+              "
+            >
+              <div class="overlay"></div>
+              <div class="details">
+                <div class="cardHeader">
+                  <h3>GameHoax website</h3>
+                </div>
+
+                <div class="cardText">
+                  <p>
+                    GameHoax is a fictional marketplace for videogames and
+                    videogame related hardwares. This singl page site was made
+                    using Vite and Vue.JS.
+                  </p>
+                </div>
+
+                <div class="d-flex gap-3">
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a
+                        href="https://marinodilauro.github.io/proj-html-vuejs/"
+                        target="_blank"
+                      >
+                        View project
+                      </a>
+                    </span>
+                  </button>
+
+                  <button type="button" class="button">
+                    <span class="button_top">
+                      <a
+                        href="https://github.com/marinodilauro/proj-html-vuejs"
+                        target="_blank"
+                      >
+                        Check repository
+                      </a>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
     <!-- #endregion MAIN -->
     <main></main>
   </body>
