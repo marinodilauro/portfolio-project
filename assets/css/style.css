@@ -197,6 +197,9 @@ header {
     filter: drop-shadow(1.5px 3px 1px var(--color-secondary));
   }
 
+  p {
+    font-size: clamp(1.4rem, 2.5vw, 1.7rem);
+  }
 }
 
 /* Projects section */
@@ -302,3 +305,21 @@ footer {
 }
 
 /* #endregion :::: FOOTER :::: */
+
+/* #region :::: MEDIA QUERIES :::: */
+@media (max-width: 576px) {
+  #about_me {
+    .row {
+      flex-direction: column;
+    }
+
+    .photo_style {
+      img {
+        height: 300px;
+        object-position: top;
+      }
+    }
+  }
+}
+
+/* #endregion :::: MEDIA QUERIES :::: */
