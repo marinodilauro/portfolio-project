@@ -15,13 +15,11 @@
   --button_outline_color: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-light) 100%);
   --button_radius: 0.75rem;
   --button_outline_color_disabled: grey;
-}
-
-/* #region :::: UTILITY RULES:::: */
-html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
 }
+
+/* #region :::: UTILITY RULES:::: */
 
 .bg_primary {
   background-color: var(--color-primary);
